@@ -1,0 +1,111 @@
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+}
+
+button {
+  border: none;
+  background: transparent;
+}
+
+.page-wrapper {
+	display: flex;
+	justify-content: center;
+  align-items: center;
+  
+  height: 100vh;
+  background-image: url('./images/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+/* Card */
+.card {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	
+	width: 1200px;
+	max-height: 100%;
+  padding: 0 4em;
+}
+
+/* Card Bio */
+.card-bio__quote {
+	position: absolute;
+	margin: auto;
+	top: 14%;
+  left: 13%;
+  z-index: 99;
+}
+
+.card-bio__text {
+	font-size: 32px;
+  max-width: 20em;
+  line-height: 1.35em;
+	height: 100%;
+}
+
+.card-bio__name {
+	font-size: 18px;
+	font-weight: 700;
+	justify-self: start;
+}
+
+.card-bio__name > span {
+	opacity: 0.5;
+}
+
+/* Card Image */
+.card-img__container {
+  position: relative;
+  justify-self: end;
+}
+
+.card-img__background {
+  position: absolute;
+  top: -11.7%;
+  right: -5%;
+  z-index: -99;
+  width: 700px;
+}
+
+.card-img__wrapper {
+  position: relative;
+  width: 550px;
+  height: 550px;
+}
+
+.card-img__wrapper img {
+  position: absolute;
+  top: 0;
+
+  display: block;
+	width: 100%;
+  height: 100%;
+  margin-left: -12%;
+  z-index: -9;
+}
+
+/* Nav Buttons */
+.button-wrapper {
+  position: absolute;
+  bottom: -28px;
+  left: 50px;
+
+  background-color: #ffff;
+  border: none;
+  color: black;
+  padding: 12px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.prev-button {
+  margin-right: 15px;
+}
